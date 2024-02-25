@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar-Food</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="pictures/download-removebg-preview.png">
+
+
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: black;
+        }
+
+        body {
+            background-color: rgb(34, 34, 34);
+            background-image: url(../eproject/pictures/smoke2.jpg);
+            background-size: cover;
+        }
+
+        .head1 {
+            width: 12.5%;
+            height: 200px;
+            padding-left: 3px;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 0px 10px;
+            justify-content: center;
+              }
+
+        .logo {
+            width: 10%;
+            height: 120px;
+        }
+
+        .nav {
+            width: 90%;
+            height: 120px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-style: italic;
+            border-top: 2px white dotted;
+            border-bottom: 2px white dotted;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+           
+        }
+       .nav1 a:hover{
+            color: gold;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-radius: 12px;
+            padding: 8px;
+            font-size:medium;
+            font-weight: lighter;
+        }
+        .item li a{
+            color: black;
+            padding: 0px 5px;
+        }
+        .item li a:hover{
+            border: none;
+            color: gold;
+        }
+
+        .box {
+            width: 100%;
+            height: 200px;
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+
+        .head {
+            color: gold;
+            padding-top: 140px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        section {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-sec {
+            width: 40%;
+            height: 450px;
+            background-color: rgb(83, 82, 83);
+            opacity: 85%;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-top: 0px;
+            padding-top: 0%;
+        }
+
+        .headingsss {
+            color: yellow;
+            font-style: italic;
+            /* padding-left: 160px;
+    padding-bottom: 10px; */
+            text-align: center;
+        }
+
+        input[type="email"] {
+            width: 50%;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            margin-left: 60px;
+            margin-top: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        label {
+            color: white;
+            padding-left: 30px;
+            font-weight: bold;
+
+        }
+
+        input[type="tel"] {
+            width: 50%;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            margin-left: 40px;
+            margin-top: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            height: 20px;
+            font-weight: bold;
+            background-color: transparent;
+            margin-left: 40px;
+            margin-top: 20px;
+            border: none;
+            border-bottom: 2px solid white;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            height: 20px;
+            background-color: transparent;
+            margin-left: 40px;
+            margin-top: 20px;
+            border: none;
+            border-bottom: 2px solid white;
+        }
+
+        input[type="submit"] {
+            margin-left: 220px;
+            margin-top: 20px;
+            border-radius: 6px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: transparent;
+            border-color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: transparent;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            color: gold;
+            border-bottom: none;
+            border-left: none;
+        }
+
+        .account {
+            margin-left: 120px;
+            margin-top: 10px;
+            color: white;
+            padding-top: 15px;
+        }
+
+        .account a {
+            margin-top: 10px;
+            color: white;
+            padding-top: 15px;
+        }
+
+        .location {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            margin: 5px 5px;
+            background-color: #222;
+        }
+
+        .loc {
+            width: 40%;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            position: relative;
+
+        }
+
+        .find {
+            width: 50%;
+            height: 400px;
+            margin-left: 50px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .find h2 {
+            text-align: center;
+            color: gold;
+            font-size: 40px;
+            font-style: italic;
+            padding-left: 40px;
+        }
+
+        .btn {
+            width: 20%;
+            height: 40px;
+            border-radius: 6px;
+            background-color: transparent;
+            margin-top: 50px;
+            margin-left: 300px;
+            color: white;
+            text-decoration: none;
+            border-color: white;
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-left: none;
+        }
+
+        .btn a:hover {
+            color: gold;
+        }
+
+        .food {
+            padding-top: 70px;
+            padding-left: 60px;
+            color: white;
+            font-weight: bold;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        p1 {
+
+            font-size: larger;
+        }
+
+        p2 {
+
+            font-size: larger;
+            float: right;
+        }
+        @media(max-width:1199px){
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:x-large;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 15px;
+          }
+          .btn {
+            width: 20%;
+            height: 55px;
+            border-radius: 6px;
+            background-color: transparent;
+            margin-top: 50px;
+            margin-left: 300px;
+            color: white;
+            text-decoration: none;
+            border-color: white;
+        }
+        }
+        @media(max-width:991px){
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size:x-large;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+          }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 12px;
+          }
+        .btn {
+            width: 20%;
+            height: 55px;
+            border-radius: 6px;
+            background-color: transparent;
+            margin-top: 30px;
+            margin-left: 220px;
+            color: white;
+            text-decoration: none;
+            border-color: white;
+        }
+        input[type="submit"] {
+            margin-left: 150px;
+            margin-top: 20px;
+            border-radius: 6px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: transparent;
+            border-color: white;
+        }
+        .find h2 {
+            text-align: center;
+            color: gold;
+            font-size: 30px;
+            font-style: italic;
+            padding-left: 40px;
+        }
+          footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+          p1{
+          font-size: large;
+         }
+          p2{
+          font-size: large;
+         }
+        }
+        @media(max-width:767px){
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: black;
+           border: none;
+            font-size: medium;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+          }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+        }
+        .btn {
+            width: 22%;
+            height: 60px;
+            border-radius: 6px;
+            background-color: transparent;
+            margin-top: 30px;
+            margin-left: 200px;
+            color: white;
+            text-decoration: none;
+            border-color: white;
+        }
+        .form-sec {
+            width: 50%;
+            height: 450px;
+            background-color: rgb(83, 82, 83);
+            opacity: 85%;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-top: 0px;
+            padding-top: 0%;
+        }
+        input[type="submit"] {
+            margin-left: 130px;
+            margin-top: 20px;
+            border-radius: 6px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            background-color: transparent;
+            border-color: white;
+        }
+        .find h2 {
+            text-align: center;
+            color: gold;
+            font-size: 25px;
+            font-style: italic;
+            padding-left: 40px;
+        }
+          footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+          p1{
+          font-size: large;
+         }
+          p2{
+          font-size: large;
+         }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head1"><img src="pictures/food.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food1.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food2.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food3.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food4.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food5.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food6.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food7.jpg" width="100%" height="200px" alt=""></div>
+    </div>
+    <div class="hero">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+            <div class="container-fluid nav-bar">
+              <img src="pictures/download-removebg-preview.png" class="logo">
+              <button class="navbar-toggler bt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="about us.html">About us</a>
+                  </li>
+                  <li class="nav-item dropdown nav1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Meals
+                    </a>
+                    <ul class="dropdown-menu item">
+                      <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                      <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                      <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                      <li><a class="dropdown-item" href="desert.html">Desert</a></li>
+                      <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>  
+                    </ul>
+                    <li class="nav-item nav1">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="award.html">Awards</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="catering.html">Catering</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="recipe.html">Recipe of the month</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="contact us.html">Contact us</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                      </li>
+                 
+              </div>
+            </div>
+          </nav>
+        </div>
+
+    <div class="box">
+        <h1 class="head">CONTACT US</h1>
+    </div>
+    <section>
+        <div class="form-sec">
+
+            <form action="#">
+                <label>First Name: </label><input type="text" placeholder="Enter your first name" required="true"
+                    autofocus><br><br>
+                <label>Last Name: </label><input type="text" placeholder="Enter your last Name" required="true"
+                    autofocus><br><br>
+                <label>Email: </label><input type="email" placeholder="Enter your Email" required="true"
+                    autofocus><br><br>
+                <label>Number: </label><input type="tel" placeholder="Enter your contact Number" required="true"
+                    autofocus><br><br>
+                <label class="Messages">Messages</label><input type="text" placeholder="Enter your query"><br><br>
+                <input type="submit">
+
+            </form>
+        </div>
+    </section>
+    <!-- <div class="location">
+    <div class="loc"><img src="pictures/kitchen2.jpg" width="100%" ></div>
+     <div class="find"><h2>Find Vineger Food Near You</h2>
+        <p class="food">We are always open to delicious food and  new menu options, so please feel free to contact us with comments, suggestions, and feedback. We'd love to hear from you!</p>
+       <a href="https://www.google.com/maps/dir/D+3,+Block+A+North+Nazimabad+Town,+Karachi,+Karachi+City,+Sindh+74600/24.9786444,67.1662698/@24.9280624,66.9513498,12z/data=!4m8!4m7!1m5!1m1!1s0x3eb33f1a7b1e05e9:0x6824a33b4bb38776!2m2!1d67.0337726!2d24.92807!1m0?entry=ttu"> <button class="btn">Find Location</button></a></div>
+ </div> -->
+    <div class="location">
+        <div class="loc"><img src="pictures/kitchen2.jpg" width="100%"></div>
+        <div class="find">
+            <h2>Find Vinegar Food Near You</h2>
+            <p class="food">We are always open to delicious food and new menu options, so please feel free to contact us
+                with comments, suggestions, and feedback. We'd love to hear from you!</p>
+                <a href="https://www.google.com/maps/dir/D+3,+Block+A+North+Nazimabad+Town,+Karachi,+Karachi+City,+Sindh+74600/24.9786444,67.1662698/@24.9280624,66.9513498,12z/data=!4m8!4m7!1m5!1m1!1s0x3eb33f1a7b1e05e9:0x6824a33b4bb38776!2m2!1d67.0337726!2d24.92807!1m0?entry=ttu"> <button class="btn">Find Location</button></a></div>
+
+        </div>
+    </div>
+    <footer>
+        <p1>All Rights Reserved By <b>Vinegar-Food</b>(JADSONS LTD) &copy; since 2000</p1>
+        <p2>All prices are inclusive of 13% GST</p2>
+    </footer>
+</body>
+
+</html>

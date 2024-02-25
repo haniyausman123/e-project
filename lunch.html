@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar-Food</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="pictures/download-removebg-preview.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+          background-color: rgb(34, 34, 34);
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: black;
+        }
+
+        .head1 {
+            width: 12.5%;
+            height: 200px;
+            padding-left: 3px;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 0px 10px;
+            justify-content: center;
+              }
+
+        .logo {
+            width: 10%;
+            height: 120px;
+        }
+
+        .nav {
+            width: 90%;
+            height: 120px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-style: italic;
+            border-top: 2px white dotted;
+            border-bottom: 2px white dotted;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+           
+        }
+       .nav1 a:hover{
+            color: gold;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-radius: 12px;
+            padding: 8px;
+            font-size:medium;
+            font-weight: lighter;
+        }
+        .hero{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+         }
+         .item li a{
+            color: black;
+            padding: 0px 5px;
+        }
+        .item li a:hover{
+            border: none;
+            color: gold;
+        }
+       
+        .text{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            color:#daa956;
+            padding-bottom: 40px;
+            background-image: url(../eproject/pictures/smoke3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text h1{
+            font-size: 70px;
+            font-weight: bold;
+        }
+        .picture{ 
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color: rgb(34, 34, 34);
+            color: white;
+         }
+         .lunch{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+         .pasta{
+          height: 352px;
+         }
+        .container{
+          width: 100%;
+          height: 600px;
+          display: flex;
+          padding: 20px 0px;
+          z-index: -1;
+         }
+        
+        .picture1{
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+         }
+        .lunch1{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+        .hummus{
+          height: 352px;
+         }
+
+        .thai{
+          height: 352px;
+         }
+         .momos{
+          height: 352px;
+         }
+         .picture2{
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+         }
+        .lunch2{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+
+        .noodles{
+          height: 352px;
+        }
+        .star{
+          padding-left: 15px;
+          color: #daa956;
+         }
+        button{
+          margin-left: 15px;
+        }
+      
+      .btn {
+            border-radius: 50px;
+            border-color: #bda171;
+            width: 120px;
+            color: #bda171;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            border-radius: 50px;
+            border-color: #fff;
+            width: 120px;
+            background-color: gold;
+            font-weight: bold;
+            color: black;
+            transition: 1.3s;
+            cursor: pointer;
+        }
+
+        .card-title {
+            font-size: larger;
+            font-weight: bold;
+            padding-left: 15px;
+            color: #daa956;
+        }
+
+        .card-text {
+            font-size: large;
+            font-weight: lighter;
+            padding-left: 15px;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    
+        p1{
+        
+            font-size: larger;
+        }
+        p2{
+        
+            font-size: larger;
+            float: right;
+        }
+      
+        @media(max-width:767px){
+          .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: whitesmoke;
+           border: none;
+            font-size: medium;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+          .text{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color:  #daa956;
+            padding-bottom: 10px;
+            background-image: url(../eproject/pictures/smoke3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text h1{
+            font-size: 40px;
+            font-weight: bold;
+          }
+        .picture{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .lunch{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+        .container{
+          width: 100%;
+          height: 500px;
+          display: flex;
+          padding: 10px 0px;
+         }
+         .card-title {
+          padding-top: 10px;
+            font-size: small;
+            font-weight: bold;
+            padding-left: 15px;
+            color: #daa956;
+        }
+
+        .card-text {
+            font-size: small;
+            font-weight: lighter;
+            padding-left: 15px;}
+        
+        .picture1{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .lunch1{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+         .picture2{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .lunch2{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+         footer{
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        p1{
+        font-size: medium;
+         }
+    p2{
+        font-size: medium;
+         }
+        }
+        @media(max-width:991px){
+          .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: whitesmoke;
+           border: none;
+            font-size: large;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 12px;
+          }
+          .p1{
+        
+        font-size:10px;
+            }
+        .p2{
+    
+        font-size: 10px;
+       
+            }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+        }
+        .text h1{
+            font-size: 45px;
+          }
+          .text{
+            width: 100%;
+            height: 55px;
+            text-align: center;
+            color:  #daa956;
+            padding-bottom: 10px;
+            background-image: url(../eproject/pictures/smoke3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      }
+      @media(max-width:1199px){
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: whitesmoke;
+           border: none;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 15px;
+          }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+        }
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head1"><img src="pictures/food.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food1.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food2.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food3.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food4.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food5.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food6.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food7.jpg" width="100%" height="200px" alt=""></div>
+    </div>
+
+    <div class="hero">
+      <nav class="navbar navbar-expand-xl bg-body-tertiary">
+          <div class="container-fluid nav-bar">
+            <img src="pictures/download-removebg-preview.png" class="logo">
+            <button class="navbar-toggler bt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item nav1">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item nav1">
+                  <a class="nav-link" href="about us.html">About us</a>
+                </li>
+                <li class="nav-item dropdown nav1">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Meals
+                  </a>
+                  <ul class="dropdown-menu item">
+                    <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                    <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                    <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                    <li><a class="dropdown-item" href="desert.html">Desert</a></li>
+                    <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>  
+                  </ul>
+                  <li class="nav-item nav1">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="award.html">Awards</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="recipe.html">Recipe of the month</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="contact us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+               
+            </div>
+          </div>
+        </nav>
+      </div>
+        <div class="text">
+            <h1> Our Lunch Menu</h1>
+    </div><br><br>
+
+    <div class="container">
+        <div class="col">
+          <div class="card picture">
+            <img src="pictures/ch sandy.jpg"class="card-img-top lunch sandy">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Sandy</h5>
+              <p class="card-text">"CHICKEN SANDY is a blend of flavors with different siders"</p>
+              <h5 class="card-text">$22</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i></div><br> 
+                <button class="btn btn-primary">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card picture">
+            <img src="pictures/alfredo pasta.jpg" class="card-img-top lunch pasta">
+            <div class="card-body">
+              <h5 class="card-title">Alfredo Pasta</h5>
+              <p class="card-text">"It is a Cuisine with white sauce and chicken fillet"</p>
+              <h5 class="card-text">$23</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i></div><br> 
+                    <button class="btn btn-primary">Add</button>
+               </div>
+             </div>
+           </div>
+
+        <div class="col">
+          <div class="card picture">
+            <img src="pictures/enchiladas.jpg" class="card-img-top lunch enchilladas">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Enchilladas</h5>
+              <p class="card-text">"Enchilladas are perfect for spicy and cheese lovers!"</p>
+              <h5 class="card-text">$20.45</h5>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i></div><br>
+                          <button class="btn btn-primary">Add</button>
+                   </div>
+             </div>
+         </div>
+
+      </div><br><br>
+
+      <div class="container">
+
+        <div class="col">
+          <div class="card picture1">
+            <img src="pictures/humus.jpg" class="card-img-top lunch1 hummus">
+            <div class="card-body">
+              <h5 class="card-title">Hummus With Pita</h5>
+              <p class="card-text">"Mild Hummus With Pita Bread, pure bliss in every bite!"</p>
+              <h5 class="card-text">$15</h5>
+              <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i></div><br>
+                 <button class="btn btn-primary">Add</button>
+            </div>
+          </div> 
+        </div>
+
+        <div class="col">
+          <div class="card picture1">
+            <img src="pictures/ch thai.jpg" class="card-img-top lunch1 thai">
+            <div class="card-body">
+              <h5 class="card-title">Thai Chicken</h5>
+              <p class="card-text">"our Tender Chicken, pure heaven in every bite!"</p>
+              <h5 class="card-text">$23</h5>
+              <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i></div><br>
+                 <button class="btn btn-primary">Add</button>
+            </div>
+          </div> 
+        </div>
+
+        <div class="col">
+          <div class="card picture1">
+            <img src="pictures/momos.jpg" class="card-img-top lunch1 momos">
+            <div class="card-body">
+              <h5 class="card-title">Momos</h5>
+              <p class="card-text">"A perfect match of mild spices and hot chutney!"</p>
+              <h5 class="card-text">$18</h5>
+              <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i></div><br>
+                 <button class="btn btn-primary">Add</button>
+            </div>
+          </div> 
+        </div>
+
+    </div><br><br>
+
+    <div class="container container2">
+
+      <div class="col">
+        <div class="card picture2">
+          <img src="pictures/noodles.jpg" class="card-img-top lunch2 noodles">
+          <div class="card-body">
+            <h5 class="card-title">Haka Noodles</h5>
+            <p class="card-text">"The best noodles in Town cooked with veges and chicken!"</p>
+            <h5 class="card-text">$20</h5>
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i></div><br>
+               <button class="btn btn-primary">Add</button>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col">
+        <div class="card picture2">
+          <img src="pictures/ruben.jpeg" class="card-img-top lunch2 reuben">
+          <div class="card-body">
+            <h5 class="card-title">Reuben Sandwich</h5>
+            <p class="card-text">"A German sandwich with REUBEN HAM in a toasted bread!"</p>
+            <h5 class="card-text">$18.50</h5>
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i></div><br>
+               <button class="btn btn-primary">Add</button>
+          </div>
+        </div> 
+      </div>
+
+      <div class="col">
+        <div class="card picture2">
+          <img src="pictures/mushrooms.jpg" class="card-img-top lunch2 mushroom">
+          <div class="card-body">
+            <h5 class="card-title">Sauted Mushrooms</h5>
+            <p class="card-text">"Mushrooms with penne pasta cooked in green
+                sauce"</p>
+            <h5 class="card-text">$19</h5>
+            <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i></div><br>
+               <button class="btn btn- primary">Add</button>
+          </div>
+        </div> 
+      </div>
+
+  </div><br><br>
+
+  <footer>
+    <p1>All Rights Reserved By <b>Vinegar-Food</b>(JADSONS LTD) &copy; since 2000</p1>
+    <p2>All prices are inclusive of 13% GST</p2>
+</footer>
+
+</body>
+
+</html>

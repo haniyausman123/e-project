@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar-Food</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="pictures/download-removebg-preview.png">
+
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;}
+    body{
+        background-color: rgb(34, 34, 34);
+    }
+    .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: black;}
+
+        .head1 {
+            width: 12.5%;
+            height: 200px;
+            padding-left: 3px;
+            box-sizing: border-box;
+        }
+        .nav-bar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 0px 10px;
+            justify-content: center;
+              }
+
+        .logo {
+            width: 10%;
+            height: 120px;
+        }
+
+        .nav {
+            width: 90%;
+            height: 120px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-style: italic;
+            border-top: 2px white dotted;
+            border-bottom: 2px white dotted;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+           
+        }
+       .nav1 a:hover{
+            color: gold;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-radius: 12px;
+            padding: 8px;
+            font-size:medium;
+            font-weight: lighter;
+        }
+        .hero{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+         }
+         .item li a{
+            color: black;
+            padding: 0px 5px;
+        }
+        .item li a:hover{
+            border: none;
+            color: gold;
+        }
+         .text{
+            width: 100%;
+            height: 90px;
+            text-align: center;
+            color:  #daa956;
+            padding: 20px 0px;
+            background-image: url(../eproject/pictures/smoke3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;}
+
+          .picture{ 
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+         }
+         .beverages{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+        
+        .container{
+          width: 100%;
+          height: 600px;
+          display: flex;
+          padding: 20px 0px;
+         }
+         .star{
+          padding-left: 15px;
+          color: #daa956;
+         }
+         .picture1{ 
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+         }
+         .beverages1{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+  
+         .btn {
+            border-radius: 50px;
+            border-color: #dfb264;
+            width: 120px;
+            color: #daa956;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            border-radius: 50px;
+            border-color: #fff;
+            width: 120px;
+            background-color: gold;
+            font-weight: bold;
+            color: black;
+            transition: 1.3s;
+            cursor: pointer;
+        }
+        button{
+          margin-left: 15px;
+        }
+
+        .card-title {
+            font-size: larger;
+            font-weight: bold;
+            padding-left: 15px;
+            color: #daa956;
+        }
+
+        .card-text {
+            font-size: large;
+            font-weight: lighter;
+            padding-left: 15px;
+        }
+        .tea{
+          height: 352px;
+        }
+        .hot{
+          height: 352px;
+        }
+        .picture2{ 
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+         }
+         .cold{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+        .pina{
+          height: 352px;
+        }
+        .picture3{ 
+            width: 100%;
+            height: 600px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+         }
+         .cold1{
+          width: 100%;
+          height: 600px;
+          padding:10px 30px;
+          justify-content: space-evenly;
+         }
+         .lemonade{
+          height: 352px;
+         }
+         .berry{
+          height: 352px;
+         }
+         footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    
+        p1{
+        
+            font-size: larger;
+        }
+        p2{
+        
+            font-size: larger;
+            float: right;
+        }
+        @media(max-width:767px){
+          .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: whitesmoke;
+           border: none;
+            font-size:medium;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+          .text{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            color:  #daa956;
+            padding-bottom: 10px;
+            background-image: url(../eproject/pictures/smoke3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .text h1{
+            font-size: 30px;
+            font-weight: bold;
+          }
+        .picture{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .beverages{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+        .container{
+          width: 100%;
+          height: 500px;
+          display: flex;
+          padding: 10px 0px;
+         }
+         .card-title {
+          padding-top: 10px;
+            font-size: small;
+            font-weight: bold;
+            padding-left: 15px;
+            color: #daa956;
+        }
+
+        .card-text {
+            font-size: small;
+            font-weight: lighter;
+            padding-left: 15px;}
+        
+        .picture1{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .beverages1{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+         .picture2{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .beverages2{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+         .picture3{ 
+            width: 100%;
+            height: 500px;
+            border: none;
+            background-color:  rgb(34, 34, 34);
+            color: white;
+        }
+        .cold{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+         .cold1{
+          width: 100%;
+          height: 400px;
+          padding:5px 10px;
+          justify-content: space-evenly;
+         }
+         footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        p1{
+        font-size: medium;
+         }
+        p2{
+        font-size: medium;
+         }
+        }
+        @media(max-width:991px){
+          .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: whitesmoke;
+           border: none;
+            font-size:larger;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 12px;
+          }
+        .p1{
+        
+        font-size:10px;
+            }
+        .p2{
+    
+        font-size: 10px;
+       
+            }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+        }
+        .text h1{
+            font-size: 35px;
+          }
+          .text{
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            color:  #daa956;
+            padding-bottom: 10px;
+            background-image: url(../eproject/pictures/smoke3.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      }
+      @media(max-width:1199px){
+        .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: whitesmoke;
+           border: none;
+            font-size:x-large;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+            footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: space-between;
+        }
+        .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 15px;
+          }
+        }
+      
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head1"><img src="pictures/food.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food1.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food2.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food3.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food4.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food5.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food6.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food7.jpg" width="100%" height="200px"></div>
+    </div>
+    <div class="hero">
+      <nav class="navbar navbar-expand-xl bg-body-tertiary">
+          <div class="container-fluid nav-bar">
+            <img src="pictures/download-removebg-preview.png" class="logo">
+            <button class="navbar-toggler bt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item nav1">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item nav1">
+                  <a class="nav-link" href="about us.html">About us</a>
+                </li>
+                <li class="nav-item dropdown nav1">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Meals
+                  </a>
+                  <ul class="dropdown-menu item">
+                    <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                    <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                    <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                    <li><a class="dropdown-item" href="desert.html">Desert</a></li>
+                    <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>  
+                  </ul>
+                  <li class="nav-item nav1">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="award.html">Awards</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="recipe.html">Recipe of the month</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="contact us.html">Contact us</a>
+                    </li>
+                    <li class="nav-item nav1">
+                      <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+               
+            </div>
+          </div>
+        </nav>
+      </div>
+    <div class="text">
+        <h1> Hot Beverages</h1>
+  </div><br><br>
+  <div class="container">
+    <div class="col">
+      <div class="card picture">
+        <img src="pictures/tea.jpeg"class="card-img-top beverages tea">
+        <div class="card-body">
+          <h5 class="card-title">Milk Tea</h5>
+          <p class="card-text">"Rich aromatic Tea with pure Australian Cow Milk"</p>
+          <h5 class="card-text">$5</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i></div><br> 
+        <button class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card picture">
+        <img src="pictures/pink tea.webp" class="card-img-top beverages pink">
+        <div class="card-body">
+          <h5 class="card-title">Pink Tea</h5>
+          <p class="card-text">"It is also called Kashmiri Tea. best for winters"</p>
+          <h5 class="card-text">$8</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i></div><br> 
+        <button class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card picture">
+        <img src="pictures/green tea.webp" class="card-img-top beverages green">
+        <div class="card-body">
+          <h5 class="card-title">Green Tea</h5>
+          <p class="card-text">"Refreshing and hot tea served with lemon"</p>
+          <h5 class="card-text">$4</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i></div><br>
+                      <button class="btn btn-primary">Add</button>
+               </div>
+         </div>
+     </div>
+
+  </div><br><br>
+
+  <div class="container">
+
+    <div class="col">
+      <div class="card picture1">
+        <img src="pictures/cappucinno.webp" class="card-img-top beverages1 cappucinno">
+        <div class="card-body">
+          <h5 class="card-title">Hot Cappucinno</h5>
+          <p class="card-text">"Strong Coffee with frothy milk and bit of cream"</p>
+          <h5 class="card-text">$8.50</h5>
+          <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <i class="bi bi-star"></i></div><br>
+             <button class="btn btn-primary">Add</button>
+        </div>
+      </div> 
+    </div>
+
+    <div class="col">
+      <div class="card picture1">
+        <img src="pictures/bubble tea.jpg" class="card-img-top beverages1 bubble">
+        <div class="card-body">
+          <h5 class="card-title">Milk Bubble Tea</h5>
+          <p class="card-text">"Hot tea with sweet bubbles and unsweetend milk"</p>
+          <h5 class="card-text">$9</h5>
+          <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i></div><br>
+             <button class="btn btn-primary">Add</button>
+        </div>
+      </div> 
+    </div>
+
+    <div class="col">
+      <div class="card picture1">
+        <img src="pictures/hot chocolate.jpg" class="card-img-top beverages1 hot">
+        <div class="card-body">
+          <h5 class="card-title">Choco Mocco</h5>
+          <p class="card-text">"It is a rich and creamy hot chocolate with jello"</p>
+          <h5 class="card-text">$10</h5>
+          <div class="star">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i></div><br>
+             <button class="btn btn-primary">Add</button>
+        </div>
+      </div> 
+    </div>
+
+</div><br><br><br><br>
+
+<div class="text">
+  <h1> Cold Beverages</h1>
+</div><br><br><br>
+<div class="container">
+<div class="col">
+<div class="card picture2">
+  <img src="pictures/margarita.jpeg"class="card-img-top cold margarita">
+  <div class="card-body">
+    <h5 class="card-title">Margarita</h5>
+    <p class="card-text">"A cocktail of tequila, triple sec, and lime juice."</p>
+    <h5 class="card-text">$8</h5>
+              <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i></div><br> 
+  <button class="btn btn-primary">Add</button>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card picture2">
+  <img src="pictures/blue lagoon.jpeg" class="card-img-top cold lagoon">
+  <div class="card-body">
+    <h5 class="card-title">Blue Lagoon</h5>
+    <p class="card-text">"A cocktail of blue Curaçao  with vodka and lemonade."</p>
+    <h5 class="card-text">$9.25</h5>
+              <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i></div><br> 
+  <button class="btn btn-primary">Add</button>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card picture2">
+  <img src="pictures/pina colada.jpg" class="card-img-top cold pina">
+  <div class="card-body">
+    <h5 class="card-title">Pina Colada</h5>
+    <p class="card-text">"Refreshing blend of pineapple juice and cream of coconut"</p>
+    <h5 class="card-text">$12</h5>
+              <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i></div><br>
+                <button class="btn btn-primary">Add</button>
+         </div>
+   </div>
+</div>
+
+</div><br><br>
+
+<div class="container">
+
+<div class="col">
+<div class="card picture3">
+  <img src="pictures/berry.webp" class="card-img-top cold1 berry">
+  <div class="card-body">
+    <h5 class="card-title">Mixed Berry Smoothie</h5>
+    <p class="card-text">"A smoothie of all mixed berries for your sweet tooth"</p>
+    <h5 class="card-text">$8.50</h5>
+    <div class="star">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <i class="bi bi-star"></i></div><br>
+       <button class="btn btn-primary">Add</button>
+  </div>
+</div> 
+</div>
+
+<div class="col">
+<div class="card picture3">
+  <img src="pictures/mojito.webp" class="card-img-top cold1 mojito">
+  <div class="card-body">
+    <h5 class="card-title">Mango Mojito</h5>
+    <p class="card-text">" A Cocktail of sugar, lime juice, mango, soda water, and mint."</p>
+    <h5 class="card-text">$7</h5>
+    <div class="star">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <i class="bi bi-star"></i></div><br>
+       <button class="btn btn-primary">Add</button>
+  </div>
+</div> 
+</div>
+
+<div class="col">
+<div class="card picture3">
+  <img src="pictures/st lemonade.jpg" class="card-img-top cold1 lemonade">
+  <div class="card-body">
+    <h5 class="card-title">Strawberry Lemonade</h5>
+    <p class="card-text">"A combination of strawberry punch and lime juice"</p>
+    <h5 class="card-text">$7.50</h5>
+    <div class="star">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i></div><br>
+       <button class="btn btn-primary">Add</button>
+  </div>
+</div> 
+</div>
+
+</div><br><br>
+<footer>
+  <p1>All Rights Reserved By <b>Vinegar-Food</b>(JADSONS LTD) &copy; since 2000</p1>
+  <p2>All prices are inclusive of 13% GST</p2>
+</footer>
+
+
+
+    
+</body>
+</html>

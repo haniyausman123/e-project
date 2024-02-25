@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar-Food</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" href="pictures/download-removebg-preview.png">
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        .header {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: black;
+        }
+
+        body {
+            background-color: rgb(34, 34, 34);
+            background-image: url(../eproject/pictures/smoke2.jpg);
+            background-size: cover;
+        }
+
+        .head1 {
+            width: 12.5%;
+            height: 200px;
+            padding-left: 3px;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            padding: 0px 10px;
+            justify-content: center;
+              }
+
+        .logo {
+            width: 10%;
+            height: 120px;
+        }
+
+        .nav {
+            width: 90%;
+            height: 120px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .nav ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        .nav1 a {
+            color: white;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bolder;
+            font-style: italic;
+            border-top: 2px white dotted;
+            border-bottom: 2px white dotted;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+           
+        }
+       .nav1 a:hover{
+            color: gold;
+            border-right: 3px solid maroon;
+            border-top: 3px solid maroon;
+            border-bottom: none;
+            border-radius: 12px;
+            padding: 8px;
+            font-size:medium;
+            font-weight: lighter;
+        }
+        .hero{
+            width: 100%;
+            height: 150px;
+            position: relative;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+         }
+         .item li a{
+            color: black;
+            padding: 0px 5px;
+        }
+        .item li a:hover{
+            border: none;
+            color: gold;
+        }
+
+        
+.info2{
+    width: 100%;
+    height: 100px;
+    color: gold;
+    background-color: rgb(34, 34, 34);
+    padding-left: 35%;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600 bold;
+    font-weight: bold;
+}
+
+
+.div1{
+    width: 100%;
+    height: 25px;
+     text-align: center;
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 5%;
+   
+}
+.menu{
+    width: 100%;
+    height: 500px;
+    display: flex;
+   
+}
+.menu1 p9{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;}
+
+.menu1{
+    width: 40%;
+    height: 400px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 23px;
+    padding:5px 120px;
+    box-sizing: border-box;
+}
+.paki-food{
+    width: 60%;
+    height: 400px;
+    margin-right: 15px;
+}
+.menu2 p10{
+    text-decoration: none;
+    font-weight: bold;
+    color: gold;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.menu2{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 23px;
+    padding:  5px 120px;
+    margin-left: 7px;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+.ch-food{
+    width: 60%;
+    height: 500px;
+    margin-left: 15px;
+}
+.menu3 p11{
+    text-decoration: none;
+    font-weight: bold;
+    color: gold;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.menu3{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 23px;
+    padding:  5px 120px;
+    box-sizing: border-box;
+}
+.italy-food{
+    width: 60%;
+    height: 400px;
+    margin-right: 15px;
+}
+.d-food{
+    width: 50%;
+    height: 400px;
+    margin-right: 15px;
+}
+
+.d-food1{
+    width: 50%;
+    height: 400px;
+    margin-left: 15px;
+}
+.desert-bar p12{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.desert-bar{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 23px;
+    padding:  3px 120px;
+    
+}
+
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        p1{
+        
+        font-size: larger;
+    }
+    p2{
+    
+        font-size: larger;
+        float: right;
+    }
+    @media(max-width:767px){
+    .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+    .nav1 a:hover{
+            color: gold;
+           border: none;
+            font-size:medium;
+            font-weight: bolder;
+        }
+    .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+     .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 10px;
+          }
+    .info2{
+    width: 100%;
+    height: 40px;
+    color: gold;
+    background-color: rgb(34, 34, 34);
+    padding-left: 35%;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600 bold;
+    font-weight: bold;
+}
+    .info2 h1{
+        font-size: larger;
+    }
+    .div1{
+    width: 100%;
+    height: 25px;
+     text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-bottom: 5%;
+   
+}
+.menu1{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 20px;
+    padding:5px 10px;
+    box-sizing: border-box;
+}
+.menu1 p9{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 25px;
+    /* margin-left: 10px; */
+    text-decoration: underline;}
+
+   .menu2{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 20px;
+    padding:5px 10px;
+    box-sizing: border-box;
+}
+    .menu2 p10{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;}
+    .menu3{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 20px;
+    padding:5px 10px;
+    box-sizing: border-box;
+}
+.menu3 p11{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;}
+    
+.desert-bar p12{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.desert-bar{
+    width: 45%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 20px;
+    padding:  5px 0px;
+}
+.d-food{
+    width: 45%;
+    height: 400px;
+    margin-right: 15px;
+}
+
+.d-food1{
+    width: 45%;
+    height: 400px;
+    margin-left: 15px;
+}
+footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        p1{
+        font-size: medium;
+         }
+        p2{
+        font-size: medium;
+         }
+}
+@media(max-width:991px){
+    .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: larger;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color:gold;
+           border: none;
+            font-size:larger;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 12px;
+          }
+.menu1{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu1 p9{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-left: 10px; */
+    text-decoration: underline;}
+
+.menu2{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu2 p10{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;}
+.menu3{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu3 p11{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;}
+    
+.desert-bar p12{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: 600;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.desert-bar{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 22px;
+    padding:  5px 30px;
+}
+footer{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        p1{
+        font-size: medium;
+         }
+        p2{
+        font-size: medium;
+         }
+    }
+@media(max-width:1199px){
+    .nav1 a {
+            color:gold;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: bold;
+            font-style: italic;
+            border: none;
+        }
+        .nav1 a:hover{
+            color: gold;
+           border: none;
+            font-size:x-large;
+            font-weight: bolder;
+        }
+        .navbar-collapse {
+            z-index: 1;
+            background-color: black;
+            width: 30%;
+            height: 700px;
+          }
+          .bt{
+            background-color: #daa956;
+            color: maroon;
+            padding: 15px;
+          }
+.menu1{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu1 p9{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-left: 10px; */
+    text-decoration: underline;}
+    .menu2{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu2 p10{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;}
+.menu3{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu3 p11{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;}
+    
+.desert-bar p12{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: 600;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.desert-bar{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 22px;
+    padding:  5px 20px;
+}
+}
+@media(max-width:1399px){
+    .menu1{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu1 p9{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    /* margin-left: 10px; */
+    text-decoration: underline;}
+    .menu2{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu2 p10{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;}
+.menu3{
+    width: 40%;
+    height: 450px;
+    /* text-align: center; */
+    background-color: transparent;
+    color:gold;
+    font-size: 22px;
+    padding:5px 20px;
+    box-sizing: border-box;
+}
+.menu3 p11{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;}
+    
+.desert-bar p12{
+    text-decoration: none;
+    font-weight: bold;
+    color:gold;
+    font-weight: 600;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.desert-bar{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    color: gold;
+    font-size: 22px;
+    padding:  5px 20px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="head1"><img src="pictures/food.jpg" width="100%" height="200px"></div>
+        <div class="head1"><img src="pictures/food1.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food2.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food3.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food4.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food5.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food6.jpg" width="100%" height="200px" alt=""></div>
+        <div class="head1"><img src="pictures/food7.jpg" width="100%" height="200px" alt=""></div>
+    </div>
+    <div class="hero">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+            <div class="container-fluid nav-bar">
+              <img src="pictures/download-removebg-preview.png" class="logo">
+              <button class="navbar-toggler bt" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item nav1">
+                    <a class="nav-link" href="about us.html">About us</a>
+                  </li>
+                  <li class="nav-item dropdown nav1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Meals
+                    </a>
+                    <ul class="dropdown-menu item">
+                      <li><a class="dropdown-item" href="regular.html">Regular</a></li>
+                      <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                      <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+                      <li><a class="dropdown-item" href="desert.html">Desert</a></li>
+                      <li><a class="dropdown-item" href="beverages.html">Beverages</a></li>  
+                    </ul>
+                    <li class="nav-item nav1">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="award.html">Awards</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="catering.html">Catering</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="recipe.html">Recipe of the month</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="contact us.html">Contact us</a>
+                      </li>
+                      <li class="nav-item nav1">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                      </li>
+                 
+              </div>
+            </div>
+          </nav>
+        </div>
+    
+    <div class="info2">
+        <h1>CATERING SERVICE</h1>
+    
+    </div><br>
+    <div class="div1">SELECT ONE MENU FROM THE BELOW GIVEN CUISINES</div><br>
+    <div class="menu">
+        <div class="menu1"> <p9>LEBANESE CUISINE:</p9><br><br>
+            
+            <ul class="paki">
+                <li>Hummus</li>
+                <li>Tabbouleh</li>
+                <li>Falafel</li>
+                <li>Kibbeh</li>
+                <li>Fattoush</li>
+                <li>Labneh</li>
+                <li>Manakish</li>
+                <li>Baba Ganoush</li>
+                <li>Moussaka</li>
+            </ul>
+        </div>
+        <div class="paki-food"><img src="pictures/Lebanon.jpg" width="100%" height="400px"></div>
+    </div><br>
+    <div class="menu">
+        <div class="ch-food"><img src="pictures/Chinese.webp" width="100%" height="400px"></div>
+        <div class="menu2"> <p10>CHINESE CUISINE:</p10><br><br>
+            <ul class="chinese">
+                <li>Vegi Fried Rice</li>
+                <li>Chicken Manchurian</li>
+                <li>Haka Noodles</li>
+                <li>Wonton</li>
+                <li>Prawn Tempura</li>
+                <li>Red Soup</li>
+                <li>Desert Bar</li>
+                <li>Cocktails</li>
+            </ul>
+        </div>  
+    </div><br>
+    <div class="menu">
+        <div class="menu3"> <p11>ITALIAN CUISINE:</p11><br><br>
+            <ul class="italian">
+                <li>Pizza</li>
+                <li>Lagsana</li>
+                <li>Dumplings</li>
+                <li>Futtecinne Pasta</li>
+                <li>Fish n Chips</li>
+                <li>Spanich Rice</li>
+                <li>Russian Salad</li>
+                <li>Desert Bar</li>
+                <li>Mocktails</li>
+            </ul>
+        </div>
+        <div class="italy-food"><img src="pictures/italiancuisine.jpg" width="100%" height="400px"></div>
+    </div><br>
+    <div class="menu">
+        <div class="d-food1"><img src="pictures/desert1.jpg" width="100%" height="400px"></div>
+        <div class="desert-bar"> <p12>DESERT BAR:</p12><br><br>
+            <ul class="desert">
+                <li>Chocolate Eclairs</li>
+                <li>Truffles</li>
+                <li>Cheese Cake</li>
+                <li>Chocolate Fountain</li>
+                <li>Fudge Cake</li>
+                <li>Waffers</li>
+                <li>Mousse Shots</li>
+            </ul>
+        </div>
+        <div class="d-food"><img src="pictures/desert2.jpg" width="100%" height="400px"></div>
+    </div>
+    <footer>
+        <p1>All Rights Reserved By <b>Vinegar-Food</b>(JADSONS LTD) &copy; since 2000</p1>
+        <p2>All prices are inclusive of 13% GST</p2>
+    </footer>
+</body>
+</html>
